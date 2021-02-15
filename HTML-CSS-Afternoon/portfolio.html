@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2f26e4cb71.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+                    viewBox="0 0 24 24" focusable="false">
+                    <title>Portfolio</title>
+                    <circle cx="12" cy="12" r="10" />
+                    <path
+                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+                </svg>
+            </a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Home</a>
+            <a class="py-2 d-none d-md-inline-block" href="#aboutsection">About</a>
+            <a class="py-2 d-none d-md-inline-block" href="#projectssection">Projects</a>
+            <a class="py-2 d-none d-md-inline-block" href="#contactsection">Contact</a>
+        </div>
+    </nav>
+
+    <!--Body-->
+
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+            <h1>My Portfolio</h1>
+
+        </div>
+    </section>
+    <br>
+
+    <section id="aboutsection">
+        <h1 id="aboutheader">About Me </h1>
+
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 font-weight-normal">Hello! This is Srinivasa Sameer.</h1>
+                <p class="lead font-weight-normal">I am from Vasavi College of Engineering right now in my final year of
+                    UnderGrad.</p>
+                <p class="font-weight-bold">I'm a <span>Full Stack Developer.</span>
+                </p>
+                <p>In my free time I play Badminton, do photography and sometimes cook.</p>
+            </div>
+            <div class="product-device box-shadow d-none d-md-block"></div>
+            <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+        </div>
+    </section>
+
+
+
+    <section id="projectssection">
+        <h1 id="projectsheader">My Projects</h1>
+
+        <!--Projects List -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="projects-div" id="scv">
+                        <img src="images/web.jpg" alt="" style="width: 50%" class="projectimage img-fluid">
+                        <br>
+                        <h3 class="text-center" style="color: white;">SCV Website</h3>
+                        <a target="_blank" href="https://github.com/srinivasa-sameer/StreetCauseVasaviWebsite"
+                            class="btn btn-light viewbutton">View</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="projects-div" id="yelp">
+                        <img src="images/web1.jpg" alt="" style="width: 50%" class="projectimage img-fluid">
+                        <br>
+                        <h3 class="text-center" style="color: white;">YelpCamp</h3>
+                        <a target="_blank" href="http://yelpcampsameer.herokuapp.com/"
+                            class="btn btn-light viewbutton">View</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="projects-div" id="iot">
+                        <img src="images/iot.jpg" alt="" style="width: 50%;" class="projectimage img-fluid">
+                        <br>
+                        <h3 class="text-center" style="color: white;">Smart Parking</h3>
+                        <a target="_blank" href="https://github.com/srinivasa-sameer/SmartParkingSystem-Arduino-NodeMCU"
+                            class="btn btn-light viewbutton">View</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contactsection">
+        <h1 id="contactheader">Contact</h1>
+        <div class="container">
+            <div class="contactform">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Your Email address</label>
+                        <input id="email" type="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Message</label>
+                        <input id="msg" type="text" class="form-control" id="exampleInputPassword1"
+                            placeholder="Type your message." required>
+                        <small class="form-text text-muted">I'll get back to you soon.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="contact()">Submit</button>
+                    <span id="message" style="color: green;"></span>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+
+
+    <footer class="container-fluid  bg-dark text-center p-3 text-light">
+        <h6>Get in Touch
+        </h6>
+        <div>
+            Find me on :<a style="display:inline;padding:10px;margin:0;" class="nav-link" target="_blank"
+                href=" https://www.linkedin.com/in/SrinivasaSameerAddepalli/"><i class="fa fa-linkedin "
+                    style="font-size:20px;margin-left:10px; color : white; "></i></a>
+            <a class="nav-link" style="display:inline;margin:0;padding:0;" target="_blank"
+                href="https://www.facebook.com/srinivasasameer.13/"> <i class="fa fa-facebook-f"
+                    style="font-size:20px; margin-right: 2px; color : white;"></i></a>
+            <a style="display:inline;padding:10px;margin:0;" class="nav-link" target="_blank"
+                href=" https://www.instagram.com/the._.sameer/"><i class="fa fa-instagram "
+                    style="font-size:20px; color : white; "></i></a>
+
+
+        </div>
+    </footer>
+
+    <script>
+        function contact() {
+            let successmsg = "Message Delivered!";
+            document.getElementById("message").innerHTML = successmsg;
+            document.getElementById("email").value = "";
+            document.getElementById("msg").value = "";
+        }
+    </script>
+</body>
+
+</html>
