@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>JavaScript Assignment - 2 </h1>
+        <form onsubmit="{return false}" class="form-group">
+            <label>
+                First Name
+                <input type="text" id="fname" class="form-control" required>
+            </label>
+            <br>
+            <label>
+                Last Name
+                <input type="text" id="lname" class="form-control" required>
+            </label>
+            <br>
+            <label>
+                Age
+                <input type="number" id="age" class="form-control" required>
+            </label>
+            <br>
+
+            <label>Gender</label> <br>
+            <input type="radio" id="male" name="gender" class="form-check-input" required>
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" class="form-check-input" required>
+            <label for="female">Female</label><br>
+            <br>
+            <label>
+                Roll Number
+                <input type="text" id="rollno" class="form-control" required>
+            </label>
+            <label>
+                DOB
+                <input required type="date" id="dob" class="form-control">
+            </label>
+            <label>
+                Occupation
+                <input required type="text" id="occupation">
+            </label>
+            <br>
+            <button onclick="store()" class="btn btn-info">Submit</button>
+            <h4 id="stored"></h4>
+            <br><br>
+
+            <label>Enter Roll Number to retrieve details: </label>
+            <input type="text" id="rollnumber"><br><br>
+            <button onclick="retrieve()" class="btn btn-info">Retrieve</button>
+            <br><br>
+
+        </form>
+
+    </div>
+    <textarea id="details" cols=100 rows=10></textarea>
+
+
+    <script>
+        let student = {};
+        store = () => {
+
+            student.firstname = document.getElementById("fname").value;
+            student.lastname = document.getElementById("lname").value;
+            student.age = document.getElementById("age").value;
+            student.gender = document.getElementById("male").checked ? "Male" : "Female";
+            student.rollno = document.getElementById("rollno").value;
+            student.dob = document.getElementById("dob").value;
+            student.occupation = document.getElementById("occupation").value;
+            document.getElementById("stored").innerHTML = "The details are stored Successfully!";
+        }
+    </script>
+</body>
+
+</html>

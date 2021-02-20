@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        div {
+            margin-top: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="margin-top: 1rem">Javascript Assignment - 1</h1>
+    <div class="form-group">
+        <label>
+            Enter a String:
+            <input type="text" id="string" class="form-control" placeholder="Enter a String" required />
+        </label>
+        <br>
+        <input type="submit" class="btn btn-dark" onclick="lengthofstr()" value="Length" />
+        <h4 id="lengthofstr"></h4>
+
+        <input type="submit" class="btn btn-dark" onclick="lowerandupper()"
+            value="Convert to Upper case and Lower case" />
+        <h4 id="lowerstr"></h4>
+        <h4 id="upperstr"></h4>
+
+        <input type="submit" class="btn btn-dark" onclick="vowelsandconsonants()" value="Vowels and Constants" />
+        <h4 id="vowels"></h4>
+        <h4 id="consonants"></h4>
+        <h4 id="others"></h4>
+        <label>
+            Does the string have any numbers?
+            <input type="submit" class="btn btn-dark" onclick="anyNumber()" value="Check" />
+        </label>
+        <h4 id="anynumber"></h4>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
