@@ -1,0 +1,31 @@
+<h1>Enter Employee Details</h1>
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" ngNativeValidate>
+    <label>First Name:</label>
+    <input type="text" formControlName="firstName" required>
+    <br><br>
+
+    <label>Last Name:</label>
+    <input type="text" formControlName="lastName">
+    <br><br>
+
+    <label>Contact Number:</label>
+    <input type="number" formControlName="contactNumber">
+    <br><br>
+
+    <label>Date of Birth:</label>
+    <input type="date" formControlName="dateOfBirth">
+    <br><br>
+
+    <label>City:</label>
+    <input type="text" formControlName="city">
+
+    <br><br>
+
+    <label>Pincode:</label>
+    <input type="number" formControlName="pinCode">
+
+    <br><br>
+
+    <input type="submit">
+</form>

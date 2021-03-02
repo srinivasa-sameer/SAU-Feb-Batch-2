@@ -1,0 +1,26 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  margin-top: 3%;
+  width: 70%;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+.head-btn {
+  border: none;
+  background: none;
+}
+
+h1 {
+  margin-left: 5rem;
+}
