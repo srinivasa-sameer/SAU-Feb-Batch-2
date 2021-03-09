@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Junit_Prime/src"/>
+	<classpathentry kind="src" path="Logging/src/main/java"/>
+	<classpathentry kind="src" path="Mockito/src/main/java"/>
+	<classpathentry kind="src" path="Mockito/src/test/java"/>
+	<classpathentry kind="output" path="Junit_Prime/bin"/>
+</classpath>
